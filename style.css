@@ -86,3 +86,13 @@ body {
 .page:hover .page-content {
     transform: scale(1.01);
 }
+/* Spread: una única imagen que abarca dos páginas consecutivas (izquierda/derecha).
+   No es necesario partir la imagen en archivos separados: usamos background-size: 200%
+   y posicionamos cada mitad en la página correspondiente. */
+#page-1-left .page-content,
+#page-2-right .page-content {
+    background-repeat: no-repeat;
+    background-size: 200% auto; /* 200% ancho = ocupa ambas páginas */
+}
+#page-1-left .page-content { background-position: left center; }
+#page-2-right .page-content { background-position: right center; }
