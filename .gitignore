@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+node_modules/
+npm-debug.log*
+.env
+
+# OS files
+desktop.ini
+
+# Optional: si quieres ignorar vendor, descomenta la línea siguiente
+# vendor/

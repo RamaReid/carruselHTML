@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Revista</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Flip-book: portada, spread (imagen ocupando dos páginas), páginas internas y contraportada -->
+    <div id="mi-revista" class="flip-book">
+        <div id="page-0-cover" class="page" data-name="cover-start">
+            <div class="page-content">Portada</div>
+        </div>
+
+        <!-- Spread: la misma imagen en dos páginas consecutivas (usamos .page-content con background-image) -->
+        <div id="page-1-left" class="page" data-name="spread-left">
+            <div class="page-content" style="background-image: url('img/hero/cedahause-hero.png')"></div>
+        </div>
+        <div id="page-2-right" class="page" data-name="spread-right">
+            <div class="page-content" style="background-image: url('img/hero/cedahause-hero.png')"></div>
+        </div>
+
+        <!-- Página extra (opcional) -->
+        <div id="page-3" class="page" data-name="inner-page-1">
+            <div class="page-content">Página</div>
+        </div>
+
+        <div id="page-4-cover" class="page" data-name="cover-end">
+            <div class="page-content">Contraportada</div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@1.2.0/dist/js/page-flip.browser.min.js"></script>
+
+    <script src="accion.js"></script>
+
+</body>
+</html>
