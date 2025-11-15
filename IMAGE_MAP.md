@@ -5,14 +5,15 @@ This file documents which image is assigned to each spread according to the `reg
 Mapping (spread -> image):
 
 - spread-1: img/hero/cedahause-hero.png
-- spread-2: img/hero/ciane-hero.jpg
-- spread-3: img/hero/gadehause-hero.jpg
-- spread-4: img/hero/jomahause-hero.jpg
-- spread-5: img/hero/magahause-hero.jpg
-- spread-6: img/hero/markhause-hero.jpg
-- spread-7: img/hero/scohause-hero.jpg
-- spread-8: img/hero/usahause-hero.jpg
-- spread-9: img/hero/vidahause-hero.jpg
+- spread-2: img/hero/scohause-hero.png
+- spread-3: img/hero/magahause-hero.png
+- spread-4: img/hero/gadehause-hero.png
+- spread-5: img/hero/jomahause-hero.png
+- spread-6: img/hero/usahause-hero.png
+- spread-7: img/hero/ciane-hero.png
+- spread-8: img/hero/vidahause-hero.png
+- spread-9: img/hero/markhause-hero.png
+- spread-10: img/hero/donahause-hero.png
 
 Notes:
 - Left page (`spread-N-left`) shows the LEFT half of the image (background-position: left center).
