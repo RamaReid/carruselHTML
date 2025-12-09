@@ -1,8 +1,8 @@
 body {
-    /* Esto es lo que SÍ te funciona: el fondo y el centrado */
-    background-color: #f0f0f0;
+    /* Make background transparent so the parent plane remains visible */
+    background-color: transparent;
     display: block;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     font-family: sans-serif;
 }
@@ -11,16 +11,16 @@ body {
   A tu regla .flip-book le faltan el width y el height.
 */
 .flip-book {
-    width: 100vw;  /* ocupar toda la pantalla */
-    height: 100vh; /* ocupar toda la pantalla */
+    width: 100%;
+    height: 100%;
     box-shadow: none;
     overflow: hidden;
 }
 
 .page {
-    /* Esto también es necesario para las páginas */
-    background-color: #fdfdfd;
-    border: 1px solid #c2c2c2;
+    /* Pages should be transparent so the parent's plane shows through */
+    background-color: transparent;
+    border: 0; /* avoid solid white borders that block the plane */
     text-align: center;
     padding: 0;            /* quitar padding para que la página ocupe toda su caja */
     font-size: 24px;
@@ -28,16 +28,16 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    /* Dejar que la librería PageFlip fije el ancho de página; forzamos altura */
+    /* Let PageFlip manage width; height should fill the iframe container */
     width: auto;
-    height: 100vh;         /* toda la altura de la ventana */
+    height: 100%;
     position: relative; /* necesario para posicionar badge */
 }
 .page[data-density="hard"] {
-    background-color: #e3e3e3;
+    background-color: transparent;
     font-weight: bold;
-    /* Forzar altura de portada/contraportada; ancho lo gestiona PageFlip */
-    height: 100vh;
+    /* Height fills the iframe container */
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
